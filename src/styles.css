@@ -1,0 +1,74 @@
+:root{
+    --background: #cdcdf1;
+    --delete: #b40500;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: var(--background);
+  }
+
+form{
+    width: 65vw;
+    margin: auto;
+    height: 15vh;
+    margin-top: 50px;
+    
+}
+#item{
+    width: 100%;
+    border-radius: 10px;
+    height: 45px;
+    font-size: large;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.btn{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+.add-btn{
+    width: 100%;
+    background-color: #46469b;
+    color:white;
+    font-size: large;
+    border: none;
+}
+
+.add-btn:hover{
+    background-color: #23238f;
+}
+
+label{
+    font-size:larger;
+    margin: 0px 5px;
+}
+
+.header{
+    text-align: center;
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 5px auto;
+    
+}
+li{
+   margin: 0px auto;
+}
+
+.btn-delete{
+    color: var(--delete);
+    border: 3px solid var(--delete);
+}
+
+.btn-delete:hover{
+    box-shadow: 2px 2px 2px var(--delete);
+}

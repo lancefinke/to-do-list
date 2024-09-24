@@ -1,23 +1,23 @@
-//import './App.css';
+import "./styles.css"
+import { useState } from "react"
 
-function App() {
+export default function App(){
+  const [newitem, setNewItem] = useState("")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <form className="new-item-form">
+      <div className="form-row">
+          <label htmlFor="item">New Item</label>
+          <input type="text" id="item" />
+      </div>
+      <button className="btn add-btn">ADD</button>
+    </form>
+    <h1 className="header">To-Do List</h1>
+    <ol className="list">
+      
+    </ol>
+    </>
+  )
 }
 
-export default App;
