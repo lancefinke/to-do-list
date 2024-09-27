@@ -35,7 +35,9 @@ form{
 .list-box{
     overflow:scroll;
     max-height: 70vh;
-    
+    margin: 10px auto;
+    width: 70%;
+    min-width:900px;
 }
 
 .add-btn{
@@ -57,18 +59,23 @@ label{
 
 .header{
     text-align: center;
+    margin-top: 10px;
 }
-ol{
+ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     width: 50%;
     margin: 5px auto;
     
 }
 li{
-   margin: 0px auto;
+   font-size: 150%;
+   display: flex;
+   justify-content: space-between;
+   padding-top:20px;
 }
+
 
 .btn-delete{
     color: var(--delete);
@@ -78,3 +85,21 @@ li{
 .btn-delete:hover{
     box-shadow: 2px 2px 2px var(--delete);
 }
+
+@media screen and (max-width:800px){
+    .list-box{
+        margin-left:-200px;
+    }
+}
+@media screen and (max-height:700px){
+    .header{
+        margin-top:50px;
+    }
+}
+@media screen and (max-height:400px){
+    .header{
+        margin-top:100px;
+    }
+}
+
+
