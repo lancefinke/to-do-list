@@ -1,6 +1,7 @@
 :root{
     --background: #cdcdf1;
     --delete: #b40500;
+    --secondary: #46469b;
 }
 
 * {
@@ -19,10 +20,12 @@ form{
 #item{
     width: 100%;
     border-radius: 10px;
+    border: 2px solid var(--secondary);
     height: 45px;
     font-size: large;
     margin-top: 15px;
     background-color: white;
+    accent-color: var(--secondary);
 }
 
 .btn{
@@ -33,16 +36,16 @@ form{
 }
 
 .list-box{
-    overflow:scroll;
+    overflow-y:auto;
     max-height: 70vh;
     margin: 10px auto;
-    width: 70%;
+    width: 85%;
     min-width:900px;
 }
 
 .add-btn{
     width: 100%;
-    background-color: #46469b;
+    background-color: var(--secondary);
     color:white;
     font-size: large;
     border: none;
@@ -55,6 +58,8 @@ form{
 label{
     font-size:larger;
     margin: 0px 5px;
+    
+    
 }
 
 .header{
@@ -76,6 +81,13 @@ li{
    padding-top:20px;
 }
 
+.toggles{
+    scale: 2;
+    position: relative;
+    right: 30px;
+    bottom: 4px;
+    accent-color: var(--secondary);
+}
 
 .btn-delete{
     color: var(--delete);
@@ -101,5 +113,4 @@ li{
         margin-top:100px;
     }
 }
-
 
